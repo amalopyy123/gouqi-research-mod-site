@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Monster Girl Quest Paradox 终章 Gouqi Research Mod 下载与资料查询站">
+    <title>Gouqi Research Mod</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="返回首页">
+          <span class="brand-mark">GQ</span>
+          <span><strong>Gouqi</strong><small>Research Mod</small></span>
+        </a>
+        <nav class="top-links" aria-label="外部链接">
+          <a id="header-github" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a id="header-baidu" href="#" target="_blank" rel="noreferrer">百度云</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero page-section">
+        <div class="hero-copy">
+          <p class="eyebrow">MONSTER GIRL QUEST PARADOX · 终章</p>
+          <h1>研究修改器与数据库索引</h1>
+          <p class="hero-lede">用于测试、调试和研究的 Gouqi Research Mod。下载最新版本，或直接查询游戏数据库名称与 ID。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="hero-baidu" href="#" target="_blank" rel="noreferrer">下载最新版本</a>
+            <a class="button button-secondary" id="hero-github" href="#" target="_blank" rel="noreferrer">查看 GitHub</a>
+          </div>
+          <p class="config-note" id="config-note"></p>
+        </div>
+        <aside class="hero-aside" aria-label="项目摘要">
+          <div class="stat"><span class="stat-value">5</span><span class="stat-label">可查询数据表</span></div>
+          <div class="stat"><span class="stat-value">ID</span><span class="stat-label">支持精确定位</span></div>
+          <div class="stat"><span class="stat-value">UTF-8</span><span class="stat-label">数据文件格式</span></div>
+        </aside>
+      </section>
+
+      <section class="notice-band" aria-label="使用提示">
+        <div class="notice-inner"><strong>使用前请备份存档。</strong><span>本工具面向研究和调试，不负责平衡性；数据表仅供查询。</span></div>
+      </section>
+
+      <section id="database" class="database page-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">DATABASE INDEX</p><h2>数据库名称表</h2></div>
+          <p class="section-description">选择分类后可搜索 ID、日文名或中文名。数据在浏览器本地读取，不会上传。</p>
+        </div>
+        <div class="data-shell">
+          <div class="tabs" role="tablist" aria-label="数据库分类">
+            <button class="tab is-active" role="tab" aria-selected="true" data-dataset="variables">变量</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="switches">开关</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="weapons">武器</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="armor">防具</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="items">物品</button>
+          </div>
+          <div class="toolbar">
+            <label class="search-field"><span class="sr-only">搜索当前数据表</span><input id="search-input" type="search" placeholder="搜索 ID、名称……" autocomplete="off"><span class="search-icon" aria-hidden="true">⌕</span></label>
+            <label class="page-size"><span>每页</span><select id="page-size"><option value="25">25</option><option value="50" selected>50</option><option value="100">100</option></select><span>条</span></label>
+            <button class="download-button" id="download-csv" type="button">下载当前 CSV</button>
+          </div>
+          <div class="table-meta"><span id="table-title">变量名称表</span><span id="result-count">加载中……</span></div>
+          <div class="table-wrap">
+            <table id="data-table"><thead></thead><tbody></tbody></table>
+            <div class="table-state" id="table-state">正在读取数据……</div>
+          </div>
+          <div class="pagination" id="pagination" aria-label="分页"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div><span>Gouqi Research Mod</span><span>资料页持续更新中</span></div><a href="#home">返回顶部 ↑</a></footer>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
