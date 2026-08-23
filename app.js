@@ -29,8 +29,15 @@
     ['header-github', 'hero-github'].forEach(id => setLink(id, github));
     ['header-baidu', 'hero-baidu'].forEach(id => setLink(id, baidu));
     const note = document.querySelector('#config-note');
-    if (note && (!config.baiduUrl || config.baiduUrl === 'https://pan.baidu.com/')) note.textContent = '提示：请在 config.js 填入百度云分享链接与提取码。';
-    else if (note && config.baiduCode) note.textContent = `百度云提取码：${config.baiduCode}`;
+    if (!note) return;
+    if (!config.baiduUrl || config.baiduUrl === 'https://pan.baidu.com/') {
+      note.textContent = '提示：请在 config.js 填入百度云分享链接、提取码和解压密码。';
+      return;
+    }
+    const downloadDetails = [];
+    if (config.baiduCode) downloadDetails.push(`百度云提取码：${config.baiduCode}`);
+    if (config.archivePassword) downloadDetails.push(`解压密码：${config.archivePassword}`);
+    note.textContent = downloadDetails.join('　|　');
   }
 
   // Parse quoted CSV fields without requiring a third-party library.

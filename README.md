@@ -10,9 +10,12 @@
 window.SITE_CONFIG = {
   baiduUrl: 'https://pan.baidu.com/s/你的分享链接',
   baiduCode: 'xxxx',
+  archivePassword: '你的解压密码',
   githubUrl: 'https://github.com/amalopyy123/gouqi-mgqp-research-mod'
 };
 ```
+
+`baiduCode` 是百度云提取码，`archivePassword` 是下载压缩包后的解压密码。没有解压密码时可以保留为空字符串。
 
 不要删除或改名这八个 CSV 文件。页面会在浏览器中读取它们，并提供搜索、分页和当前表格下载：
 
