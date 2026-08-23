@@ -7,7 +7,10 @@
     switches: { label: '开关名称表', file: '开关名称表.csv' },
     weapons: { label: '武器', file: '武器.csv' },
     armor: { label: '防具', file: '防具.csv' },
-    items: { label: '物品', file: '物品.csv' }
+    items: { label: '物品', file: '物品.csv' },
+    actors: { label: '人物', file: '人物.csv' },
+    enemies: { label: '敌人', file: '敌人.csv' },
+    maps: { label: '地图', file: '地图.csv' }
   };
   const state = { key: 'variables', rows: [], headers: [], query: '', page: 1, pageSize: 50, cache: {} };
   const els = {
