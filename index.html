@@ -34,7 +34,7 @@
           <p class="config-note" id="config-note"></p>
         </div>
         <aside class="hero-aside" aria-label="项目摘要">
-          <div class="stat"><span class="stat-value">8</span><span class="stat-label">可查询数据表</span></div>
+          <div class="stat"><span class="stat-value">13</span><span class="stat-label">可查询数据表</span></div>
           <div class="stat"><span class="stat-value">ID</span><span class="stat-label">支持精确定位</span></div>
           <div class="stat"><span class="stat-value">UTF-8</span><span class="stat-label">数据文件格式</span></div>
         </aside>
@@ -47,7 +47,7 @@
       <section id="database" class="database page-section">
         <div class="section-heading">
           <div><p class="eyebrow">DATABASE INDEX</p><h2>数据库名称表</h2></div>
-          <p class="section-description">选择分类后可搜索 ID、日文名或中文名。数据在浏览器本地读取，不会上传。</p>
+          <p class="section-description">选择分类后可搜索 ID、日文名或中文名。长记录请点击每行右侧的“详情”按钮查看。</p>
         </div>
         <div class="data-shell">
           <div class="tabs" role="tablist" aria-label="数据库分类">
@@ -59,9 +59,22 @@
             <button class="tab" role="tab" aria-selected="false" data-dataset="actors">人物</button>
             <button class="tab" role="tab" aria-selected="false" data-dataset="enemies">敌人</button>
             <button class="tab" role="tab" aria-selected="false" data-dataset="maps">地图</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="recruits">敌人入队</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="skills">技能</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="abilities">能力</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="jobs">职业学习</button>
+            <button class="tab" role="tab" aria-selected="false" data-dataset="races">种族学习</button>
+          </div>
+          <div class="tab-scroll-control">
+            <label for="tab-scroll-range">滚动标签栏</label>
+            <input id="tab-scroll-range" type="range" min="0" max="0" value="0" step="1" disabled>
           </div>
           <div class="toolbar">
             <label class="search-field"><span class="sr-only">搜索当前数据表</span><input id="search-input" type="search" placeholder="搜索 ID、名称……" autocomplete="off"><span class="search-icon" aria-hidden="true">⌕</span></label>
+            <div class="advanced-filters" id="advanced-filters" hidden>
+              <label>学习类型 <select id="learning-type"><option value="">全部</option><option value="技能">技能</option><option value="能力">能力</option></select></label>
+              <label>等级 <select id="learning-level"><option value="">全部</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5+</option></select></label>
+            </div>
             <label class="page-size"><span>每页</span><select id="page-size"><option value="25">25</option><option value="50" selected>50</option><option value="100">100</option></select><span>条</span></label>
             <button class="download-button" id="download-csv" type="button">下载当前 CSV</button>
           </div>
@@ -74,6 +87,14 @@
         </div>
       </section>
     </main>
+
+    <div class="modal" id="detail-modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <div class="modal-header"><div><p class="eyebrow">RECORD DETAILS</p><h2 id="detail-title">记录详情</h2></div><button class="modal-close" type="button" aria-label="关闭详情" data-close-modal>×</button></div>
+        <dl class="detail-list" id="detail-list"></dl>
+      </section>
+    </div>
 
     <footer class="site-footer"><div><span>Gouqi Research Mod</span><span>资料页持续更新中</span></div><a href="#home">返回顶部 ↑</a></footer>
     <script src="config.js"></script>

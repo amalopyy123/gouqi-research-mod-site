@@ -58,12 +58,22 @@ h2 { font-size: 31px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
 .section-description { max-width: 420px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
 .data-shell { background: var(--surface); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(20, 43, 61, .05); }
-.tabs { display: flex; overflow-x: auto; border-bottom: 1px solid var(--line); background: #fbfcfc; }
+.tabs { display: flex; overflow-x: scroll; scrollbar-width: auto; scrollbar-color: #8fa6af #e8eef0; scrollbar-gutter: stable; -ms-overflow-style: scrollbar; border-bottom: 1px solid var(--line); background: #fbfcfc; }
+.tabs::-webkit-scrollbar { height: 10px; }
+.tabs::-webkit-scrollbar-track { background: #e8eef0; }
+.tabs::-webkit-scrollbar-thumb { background: #8fa6af; border: 2px solid #e8eef0; }
+.tab-scroll-control { display: flex; align-items: center; gap: 12px; padding: 7px 18px 8px; background: #edf2f3; border-bottom: 1px solid var(--line); }
+.tab-scroll-control label { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.tab-scroll-control input { flex: 1; min-width: 80px; height: 18px; accent-color: var(--teal); cursor: pointer; }
+.tab-scroll-control input:disabled { opacity: .35; cursor: default; }
 .tab { position: relative; min-width: 96px; padding: 16px 20px; color: var(--muted); background: transparent; border: 0; border-right: 1px solid var(--line); font: inherit; font-size: 14px; cursor: pointer; }
 .tab:hover { color: var(--teal-dark); background: var(--soft-teal); }
 .tab.is-active { color: var(--navy); font-weight: 700; background: var(--surface); }
 .tab.is-active::after { position: absolute; right: 18px; bottom: -1px; left: 18px; height: 3px; background: var(--teal); content: ""; }
 .toolbar { display: flex; align-items: center; gap: 14px; padding: 17px 20px; border-bottom: 1px solid var(--line); }
+.advanced-filters { display: flex; align-items: center; gap: 8px; }
+.advanced-filters label { display: flex; align-items: center; gap: 5px; color: var(--muted); font-size: 12px; white-space: nowrap; }
+.advanced-filters select { height: 36px; padding: 0 7px; color: var(--ink); background: #fff; border: 1px solid var(--line); font: inherit; }
 .search-field { position: relative; flex: 1; min-width: 180px; }
 .search-field input { width: 100%; height: 41px; padding: 0 39px 0 13px; color: var(--ink); background: #f7f9fa; border: 1px solid var(--line); border-radius: 2px; font: inherit; font-size: 13px; outline: none; }
 .search-field input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(22, 139, 136, .12); }
@@ -79,6 +89,9 @@ table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th { padding: 11px 20px; color: var(--muted); background: #f3f6f7; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 11px; font-weight: 700; text-align: left; white-space: nowrap; }
 td { max-width: 540px; padding: 10px 20px; border-bottom: 1px solid #e8edef; vertical-align: top; white-space: pre-wrap; }
 tbody tr:hover { background: #f5fbfa; }
+.action-column { width: 72px; min-width: 72px; text-align: center; white-space: nowrap; }
+.detail-button { min-width: 46px; height: 29px; padding: 0 8px; color: var(--teal-dark); background: var(--soft-teal); border: 1px solid #b9dcd8; font: inherit; font-size: 12px; cursor: pointer; }
+.detail-button:hover, .detail-button:focus-visible { color: #fff; background: var(--teal); border-color: var(--teal); outline: none; }
 td:first-child { color: var(--teal-dark); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-weight: 700; }
 .table-state { position: absolute; inset: 52px 0 0; display: grid; place-items: center; color: var(--muted); font-size: 13px; }
 .table-state[hidden] { display: none; }
@@ -90,6 +103,19 @@ td:first-child { color: var(--teal-dark); font-family: ui-monospace, SFMono-Regu
 .site-footer div { display: flex; gap: 18px; }
 .site-footer a { color: var(--teal-dark); text-decoration: none; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.modal[hidden] { display: none; }
+.modal { position: fixed; z-index: 20; inset: 0; display: grid; place-items: center; padding: 22px; }
+.modal-backdrop { position: absolute; inset: 0; background: rgba(20, 43, 61, .57); }
+.modal-panel { position: relative; width: min(760px, 100%); max-height: min(760px, calc(100vh - 44px)); overflow: auto; background: var(--surface); box-shadow: 0 20px 60px rgba(20, 43, 61, .28); }
+.modal-header { display: flex; justify-content: space-between; gap: 20px; padding: 24px 27px 19px; border-bottom: 1px solid var(--line); }
+.modal-header h2 { font-size: 25px; }
+.modal-close { width: 35px; height: 35px; color: var(--muted); background: transparent; border: 1px solid var(--line); font-size: 25px; line-height: 1; cursor: pointer; }
+.modal-close:hover { color: var(--navy); border-color: var(--teal); }
+.detail-list { display: grid; grid-template-columns: minmax(130px, 220px) minmax(0, 1fr); margin: 0; }
+.detail-list dt, .detail-list dd { margin: 0; padding: 12px 27px; border-bottom: 1px solid #e8edef; font-size: 13px; }
+.detail-list dt { color: var(--muted); background: #f3f6f7; font-size: 12px; font-weight: 700; }
+.detail-list dd { min-width: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+body.modal-open { overflow: hidden; }
 @media (max-width: 720px) {
   .header-inner, .page-section, .notice-inner, .site-footer { width: min(100% - 28px, 1180px); }
   .header-inner { height: 66px; }
@@ -108,7 +134,15 @@ td:first-child { color: var(--teal-dark); font-family: ui-monospace, SFMono-Regu
   h2 { font-size: 27px; }
   .toolbar { flex-wrap: wrap; padding: 13px; }
   .search-field { flex-basis: 100%; }
+  .advanced-filters { flex-basis: 100%; }
+  .advanced-filters label { flex: 1; }
+  .advanced-filters select { flex: 1; min-width: 0; }
+  .tab-scroll-control { padding-right: 13px; padding-left: 13px; }
   .table-meta { padding-right: 13px; padding-left: 13px; }
   th, td { padding-right: 13px; padding-left: 13px; }
   .site-footer { align-items: flex-start; flex-direction: column; }
+  .modal { padding: 10px; }
+  .modal-header { padding: 19px 17px 15px; }
+  .detail-list { grid-template-columns: 108px minmax(0, 1fr); }
+  .detail-list dt, .detail-list dd { padding: 10px 14px; }
 }
