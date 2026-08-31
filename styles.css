@@ -27,6 +27,7 @@ a { color: inherit; }
 .brand strong, .brand small { display: block; line-height: 1.1; }
 .brand strong { font-size: 17px; letter-spacing: .03em; }
 .brand small { margin-top: 4px; color: #b4c4cc; font-size: 11px; letter-spacing: .04em; }
+.brand em { color: #98e0da; font-style: normal; }
 .top-links { display: flex; gap: 24px; font-size: 13px; }
 .top-links a { color: #d8e6e9; text-decoration: none; }
 .top-links a:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
@@ -56,7 +57,7 @@ h2 { font-size: 31px; }
 .notice-inner span { color: #805e4b; }
 .database { padding-top: 73px; padding-bottom: 82px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
-.section-description { max-width: 420px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
+.section-description { max-width: 500px; margin: 0; color: var(--muted); font-size: 13px; text-align: right; }
 .data-shell { background: var(--surface); border: 1px solid var(--line); box-shadow: 0 8px 24px rgba(20, 43, 61, .05); }
 .tabs { display: flex; overflow-x: scroll; scrollbar-width: auto; scrollbar-color: #8fa6af #e8eef0; scrollbar-gutter: stable; -ms-overflow-style: scrollbar; border-bottom: 1px solid var(--line); background: #fbfcfc; }
 .tabs::-webkit-scrollbar { height: 10px; }

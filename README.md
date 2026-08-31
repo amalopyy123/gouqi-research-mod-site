@@ -8,12 +8,15 @@
 
 ```js
 window.SITE_CONFIG = {
+  modVersion: 'v1.0.0',
   baiduUrl: 'https://pan.baidu.com/s/你的分享链接',
   baiduCode: 'xxxx',
   archivePassword: '你的解压密码',
   githubUrl: 'https://github.com/amalopyy123/gouqi-mgqp-research-mod'
 };
 ```
+
+`modVersion` 会显示在网站头部和页脚。请按实际发布版本修改，例如 `v1.2.0`。
 
 `baiduCode` 是百度云提取码，`archivePassword` 是下载压缩包后的解压密码。没有解压密码时可以保留为空字符串。
 
@@ -34,6 +37,17 @@ window.SITE_CONFIG = {
 - `种族.csv`
 
 后续更新数据时替换对应 CSV，再重新部署即可。
+
+## 分享带搜索条件的链接
+
+页面支持通过 URL 参数直接打开指定数据表和搜索结果：
+
+```text
+?dataset=skills&q=火焰
+?dataset=jobs&q=战士&type=技能&level=3
+```
+
+支持的参数为 `dataset`、`q`、`type`、`level`、`page` 和 `size`。在页面中搜索、切换标签、筛选或翻页时，地址栏会自动同步，复制该 URL 即可分享当前查询。
 
 技能、能力、职业学习和种族学习表默认只显示常用字段。点击每行右侧的“详情”按钮可以查看完整列；长文本在主表中会预览，完整内容保留在详情窗口中。
 
