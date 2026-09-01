@@ -457,10 +457,21 @@ tbody tr:hover {
   background: #f5fbfa;
 }
 .action-column {
+  position: sticky;
+  right: 0;
   width: 72px;
   min-width: 72px;
   text-align: center;
   white-space: nowrap;
+  background: var(--surface);
+  box-shadow: -5px 0 8px rgba(20, 43, 61, .07);
+  z-index: 2;
+}
+th.action-column {
+  background: #f3f6f7;
+}
+tbody tr:hover .action-column {
+  background: #f5fbfa;
 }
 .detail-button {
   min-width: 46px;
