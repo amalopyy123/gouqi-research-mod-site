@@ -29,6 +29,7 @@ window.SITE_CONFIG = {
 - `物品.csv`
 - `人物.csv`
 - `敌人.csv`
+- `敌人掉落偷窃.csv`
 - `地图.csv`
 - `敌人入队与图片资源.csv`
 - `角色图片资源.csv`

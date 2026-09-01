@@ -5,6 +5,7 @@
     variables: { label: '变量名称表', file: '变量名称表.csv' }, switches: { label: '开关名称表', file: '开关名称表.csv' },
     weapons: { label: '武器', file: '武器.csv' }, armor: { label: '防具', file: '防具.csv' }, items: { label: '物品', file: '物品.csv' },
     actors: { label: '人物', file: '人物.csv' }, enemies: { label: '敌人', file: '敌人.csv' }, maps: { label: '地图', file: '地图.csv' },
+    enemyLoot: { label: '敌人掉落偷窃', file: '敌人掉落偷窃.csv', columns: ['怪物ID', '中文怪物名字', '获取方式', '物品类型', '物品ID', '中文物品名字'] },
     recruits: { label: '敌人入队与图片资源', file: '敌人入队与图片资源.csv', columns: ['敌人ID', '日本敌人名称', '中文敌人名称', '关联角色ID', '中文角色名称', 'Faces路径', 'Battlers路径'] },
     actorImages: { label: '角色图片资源', file: '角色图片资源.csv', columns: ['角色ID', '日本角色名称', '中文角色名称', 'Faces路径', '角色立绘路径', '角色Cut-inPictures路径'] },
     skills: { label: '技能', file: '技能.csv', columns: ['技能ID', '中文名称', '中文所属', '中文说明', 'HP消耗', 'MP消耗', 'SP消耗（内部TP）'] },
