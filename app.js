@@ -17,7 +17,7 @@
   function setLink(id, url) { const node = document.getElementById(id); if (node) node.href = url || '#'; }
   function setupLinks() {
     const version = config.modVersion ? String(config.modVersion) : 'v—';
-    ['header-version', 'footer-version'].forEach(id => { const node = document.getElementById(id); if (node) node.textContent = version; });
+    ['header-version', 'footer-version', 'download-version'].forEach(id => { const node = document.getElementById(id); if (node) node.textContent = version; });
     document.title = `Gouqi Research Mod ${version}`;
     const github = config.githubUrl || '#'; const baidu = config.baiduUrl || '#'; ['header-github', 'hero-github'].forEach(id => setLink(id, github)); ['header-baidu', 'hero-baidu'].forEach(id => setLink(id, baidu));
     const note = document.querySelector('#config-note'); if (!note) return;
