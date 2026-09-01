@@ -27,7 +27,7 @@ window.SITE_CONFIG = {
 - `武器.csv`
 - `防具.csv`
 - `物品.csv`
-- `人物.csv`
+- `角色.csv`
 - `敌人.csv`
 - `敌人掉落偷窃.csv`
 - `地图.csv`
