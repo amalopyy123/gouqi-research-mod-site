@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="在这里填写页面简介">
+    <title>在这里填写页面标题</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout-overrides.css">
+  </head>
+  <body>
+    <header class="guide-header">
+      <div class="guide-header-inner">
+        <a class="guide-brand" href="#top"><span class="brand-mark">GQ</span><span><strong>项目名称</strong><small>使用说明与更新日志</small></span></a>
+        <nav class="guide-nav" aria-label="页面导航">
+          <a href="#install">安装</a>
+          <a href="#v10">基础功能</a>
+          <a href="#v11">版本更新</a>
+          <a href="#notes">注意事项</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="guide-hero">
+        <div>
+          <p class="eyebrow">PROJECT LABEL</p>
+          <h1>在这里填写页面主标题</h1>
+          <p class="lede">在这里填写简介。保留原文措辞时，可以直接将文案放进本段或 template-data.js。</p>
+          <div class="hero-badges"><span>当前版本 1.0</span><span>可离线阅读</span></div>
+        </div>
+        <aside class="hero-note"><strong>使用前请备份</strong><p>在这里填写重要提示。</p></aside>
+      </section>
+
+      <section class="guide-section" id="install">
+        <div class="section-heading"><p class="eyebrow">GETTING STARTED</p><h2>安装、更新与卸载</h2></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><h3>安装 / 更新</h3><p>在这里填写安装和更新原文。</p></article>
+          <article class="step-card"><span class="step-number">02</span><h3>故障排查</h3><p>在这里填写故障排查原文。</p></article>
+          <article class="step-card"><span class="step-number">03</span><h3>卸载</h3><p>在这里填写卸载原文。</p></article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="v10">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.0</p><h2>基础功能</h2><p>每个功能卡片的文字和图片由 template-data.js 按原文顺序生成。</p></div>
+        <div class="feature-grid" data-feature-section="v10"></div>
+      </section>
+
+      <section class="guide-section" id="v11">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.1</p><h2>版本更新</h2></div>
+        <div class="feature-grid" data-feature-section="v11"></div>
+      </section>
+
+      <section class="guide-section" id="notes">
+        <div class="section-heading"><p class="eyebrow">NOTES</p><h2>数据与使用提示</h2></div>
+        <div class="notes-grid"><div><h3>说明 1</h3><p>在这里填写提示。</p></div><div><h3>说明 2</h3><p>在这里填写提示。</p></div><div><h3>图片说明</h3><p>截图可以点击放大查看。</p></div></div>
+      </section>
+    </main>
+
+    <div class="image-modal" id="image-modal" hidden><div class="image-backdrop" data-close-image></div><figure class="image-modal-panel"><button class="image-close" type="button" aria-label="关闭图片" data-close-image>×</button><img id="image-modal-target" alt=""><figcaption id="image-modal-caption"></figcaption></figure></div>
+    <footer class="guide-footer"><span>项目名称 · 使用说明与更新日志</span><a href="#top">返回顶部 ↑</a></footer>
+    <script src="template-data.js"></script>
+    <script src="content-flow.template.js"></script>
+    <script src="guide.js"></script>
+  </body>
+</html>

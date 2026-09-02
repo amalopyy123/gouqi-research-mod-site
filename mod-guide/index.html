@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gouqi Research Mod 使用说明、功能介绍与版本更新日志">
+    <title>Gouqi Research Mod 使用说明与更新日志</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout-overrides.css">
+  </head>
+  <body>
+    <header class="guide-header">
+      <div class="guide-header-inner">
+        <a class="guide-brand" href="#top"><span class="brand-mark">GQ</span><span><strong>Gouqi Research Mod</strong><small>使用说明与更新日志</small></span></a>
+        <nav class="guide-nav" aria-label="页面导航">
+          <a href="#install">安装</a>
+          <a href="#v10">基础功能</a>
+          <a href="#v11">1.1 更新</a>
+          <a href="#v12">1.2 更新</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="guide-hero">
+        <div>
+          <p class="eyebrow">MONSTER GIRL QUEST PARADOX · 终章</p>
+          <h1>研究、调试与数据查询工具</h1>
+          <p class="lede">Gouqi Research Mod 是为方便研究游戏数据、测试事件和调试流程制作的多功能 Mod。请适度使用，过度修改可能会降低游戏乐趣。</p>
+          <div class="hero-badges"><span>当前文档版本 1.2</span><span>55 张功能截图</span><span>可离线阅读</span></div>
+        </div>
+        <aside class="hero-note"><strong>使用前请备份存档</strong><p>本文档只介绍 Mod 的用途和操作方式；实际功能以压缩包内脚本及游戏版本为准。</p></aside>
+      </section>
+
+      <section class="guide-section" id="install">
+        <div class="section-heading"><p class="eyebrow">GETTING STARTED</p><h2>安装、更新与卸载</h2></div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">01</span><h3>安装 / 更新</h3><p>游戏目录内应已有 <code>Patch</code> 文件夹，并包含游戏原本的 <code>Patch.rb</code> 等基础补丁文件。将 <code>zzzz_gouqi_Research_Mod.rb</code> 放入游戏内的 <code>Patch</code> 目录即可。更新时直接替换旧的同名文件。</p></article>
+          <article class="step-card"><span class="step-number">02</span><h3>Mod 不生效时</h3><p>先备份游戏 <code>Patch</code> 目录下的 <code>Patch.rb</code>，然后把压缩包附带的 <code>Patch\Patch.rb</code> 复制到游戏的 <code>Patch</code> 目录，再重新启动游戏。</p></article>
+          <article class="step-card"><span class="step-number">03</span><h3>卸载</h3><p>从游戏内的 <code>Patch</code> 目录移除 <code>zzzz_gouqi_Research_Mod.rb</code> 文件。再次提醒：使用前请备份存档，过度修改会失去游戏乐趣。</p></article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="v10">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.0</p><h2>基础功能</h2><p>以下功能来自基础版本，部分功能如果与其它 Mod 重复，可以在游戏菜单中关闭。</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>1. 全入队、全职业、全种族与全形态</h3><p>无视事件限制加入全部角色，解锁全职业、全种族、全形态、全内裤、全牛奶、全 CD 和全结婚物品。全入队修复了无生之王的编队和克莱奥·阿德拉的入队。</p><div class="gallery"><figure><img src="images/v1.0/编队.png" alt="编队功能截图" loading="lazy"><figcaption>编队</figcaption></figure><figure><img src="images/v1.0/全队友.png" alt="全队友功能截图" loading="lazy"><figcaption>全队友</figcaption></figure><figure><img src="images/v1.0/全形态.png" alt="全形态功能截图" loading="lazy"><figcaption>全形态</figcaption></figure></div></article>
+          <article class="feature-card"><h3>2. 队伍长度与跟随人数</h3><p>修改队伍长度和跟随队友长度。</p><div class="gallery"><figure><img src="images/v1.0/跟随.png" alt="跟随人数功能截图" loading="lazy"><figcaption>跟随</figcaption></figure></div></article>
+          <article class="feature-card"><h3>3. 资源与道具修改</h3><p>支持 BF 次数、物品、武器、防具、钱、奖牌、兔子点数和修罗迷宫点数的修改。具体物品列表可在数据目录中搜索，并提供中日翻译。</p><div class="gallery"><figure><img src="images/v1.0/物品和变量修改.png" alt="物品和变量修改截图" loading="lazy"><figcaption>物品和变量修改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>4. 护肝开关</h3><p>提供必定入队、必定掉落、必定盗窃成功、牛奶获取必定成功等开关。</p><div class="gallery"><figure><img src="images/v1.0/开关功能.png" alt="开关功能截图" loading="lazy"><figcaption>开关功能</figcaption></figure></div></article>
+          <article class="feature-card"><h3>5. 角色图鉴</h3><p>查看数据库中的角色备注和立绘。角色被动能力会根据数据库备注解释；备注很长时可以按上下键滚动。还可以查看图片在 <code>Pictures</code> 目录中的位置，以及角色释放技能时的特写（没有专属特写时显示召唤技能特写）。</p><div class="gallery"><figure><img src="images/v1.0/查看备注.png" alt="角色备注截图" loading="lazy"><figcaption>查看备注</figcaption></figure><figure><img src="images/v1.0/图鉴特写.png" alt="图鉴特写截图" loading="lazy"><figcaption>图鉴特写</figcaption></figure></div></article>
+          <article class="feature-card"><h3>6. 对话查看</h3><p>查看魔王城内对话及剧情对话，并无视入队条件和结婚条件。</p><div class="gallery"><figure><img src="images/v1.0/魔王城全对话.png" alt="魔王城对话截图" loading="lazy"><figcaption>魔王城全对话</figcaption></figure></div></article>
+          <article class="feature-card"><h3>7. 战斗对白</h3><p>在战斗中查看双方搭话内容，也可以查看特殊技能、陷入异常状态、普通技能打败和快乐技能打败时的对话。</p><div class="gallery"><figure><img src="images/v1.0/搭话模拟.png" alt="搭话模拟截图" loading="lazy"><figcaption>搭话模拟</figcaption></figure><figure><img src="images/v1.0/特殊技能.png" alt="特殊技能对白截图" loading="lazy"><figcaption>特殊技能</figcaption></figure><figure><img src="images/v1.0/异常状态.png" alt="异常状态对白截图" loading="lazy"><figcaption>异常状态</figcaption></figure></div></article>
+          <article class="feature-card"><h3>8. 战斗模拟</h3><p>输入敌人 ID 开始战斗。战斗中可查看敌人 ID、当前 HP、属性、Buff、Debuff、掉落物等信息，也可以查看敌方技能特写。</p><div class="gallery"><figure><img src="images/v1.0/查看敌方信息3.png" alt="敌方信息截图" loading="lazy"><figcaption>敌方信息</figcaption></figure><figure><img src="images/v1.0/查看cut-in.png" alt="敌方技能特写截图" loading="lazy"><figcaption>查看 Cut-in</figcaption></figure></div></article>
+          <article class="feature-card"><h3>9. 音乐调试</h3><p>用弹窗显示当前播放的音乐。</p><div class="gallery"><figure><img src="images/v1.0/调试音乐.png" alt="调试音乐截图" loading="lazy"><figcaption>调试音乐</figcaption></figure></div></article>
+          <article class="feature-card"><h3>10. 地图与事件调试</h3><p>在地图中查看当前事件，方便处理卡关。例如前章卡圣山：将开关 2479「アモス聖山暗転」改为 OFF；终章卡新人类宴会：将变量 1150「サラサ空賊団イベント」改为 17，然后再与サラサ、爱丽丝对话。Mod 也提供开关/变量修改、一键卡关处理和指定地图事件跳转。</p><div class="gallery"><figure><img src="images/v1.0/圣山开关EV023.png" alt="圣山事件截图" loading="lazy"><figcaption>圣山开关 EV023</figcaption></figure><figure><img src="images/v1.0/空贼团宴会EV002.png" alt="空贼团宴会事件截图" loading="lazy"><figcaption>空贼团宴会 EV002</figcaption></figure><figure><img src="images/v1.0/开关和变量.png" alt="开关变量修改截图" loading="lazy"><figcaption>开关和变量</figcaption></figure><figure><img src="images/v1.0/卡关处理.png" alt="卡关处理截图" loading="lazy"><figcaption>卡关处理</figcaption></figure><figure><img src="images/v1.0/地图跳转.png" alt="地图跳转截图" loading="lazy"><figcaption>地图跳转</figcaption></figure></div></article>
+          <article class="feature-card"><h3>10.5. 地图与事件检查</h3><p>“地图与事件检查”可以一键跳到宝箱的位置，并将已经打开的宝箱关掉后重新打开，方便检查地图事件和宝箱状态。</p><div class="gallery"><figure><img src="images/v1.0/地图与事件检查1.png" alt="地图与事件检查截图 1" loading="lazy"><figcaption>地图与事件检查</figcaption></figure><figure><img src="images/v1.0/地图与事件检查2.png" alt="地图与事件检查截图 2" loading="lazy"><figcaption>重新打开宝箱</figcaption></figure></div></article>
+          <article class="feature-card"><h3>11. 实验功能</h3><p>修改敌人属性倍率；后续可能禁用量子化、八王剑、0 至无穷、阿尔夫守护、多动、璀璨明星等技能，为群友制作平衡版本。</p><div class="gallery"><figure><img src="images/v1.0/实验功能.png" alt="实验功能截图" loading="lazy"><figcaption>实验功能</figcaption></figure></div></article>
+          <article class="feature-card"><h3>12. 战斗与显示设置</h3><p>可以让对方无视 HP 释放诱惑技能，也可以让敌我双方进入诱惑状态（注意鲁卡血量）。直播时可开启“敌人诱惑事件禁止”“跳过败北事件”“敌我双方免疫诱惑”，再配合穿衣服图包使用。</p><div class="gallery"><figure><img src="images/v1.0/战斗修改.png" alt="战斗修改截图" loading="lazy"><figcaption>战斗修改</figcaption></figure></div></article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="v11">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.1</p><h2>版本更新</h2></div>
+        <div class="feature-grid compact-grid">
+          <article class="feature-card"><h3>更新 1 · 全技能台词</h3><p>“特殊战斗台词”支持查看指定角色释放所有技能的台词，已去重且无需学会技能。</p><div class="gallery"><figure><img src="images/v1.1/全技能台词1.png" alt="全技能台词截图 1" loading="lazy"><figcaption>全技能台词</figcaption></figure><figure><img src="images/v1.1/全技能台词2.png" alt="全技能台词截图 2" loading="lazy"><figcaption>技能台词详情</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 2 · 哈比之羽改</h3><p>直接传送到地上、天界、魔界、混沌的各个羽毛传送点，无视解锁条件且不消耗道具。</p><div class="gallery"><figure><img src="images/v1.1/哈比羽毛改.png" alt="哈比羽毛改截图" loading="lazy"><figcaption>哈比羽毛改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 3 · 敌人物品</h3><p>自定义战斗选敌人时，或实际战斗中，都可以直接获取当前敌人的去重掉落物和可偷盗物品。</p><div class="gallery"><figure><img src="images/v1.1/获取敌人物品1.png" alt="获取敌人物品截图 1" loading="lazy"><figcaption>选敌人时获取</figcaption></figure><figure><img src="images/v1.1/获取敌人物品2.png" alt="获取敌人物品截图 2" loading="lazy"><figcaption>战斗中获取</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 4 · 宝箱提示与远程开启</h3><p>开启宝箱提示后，未打开的宝箱和壶罐会显示内容物是物品还是怪物。支持远程打开宝箱（自动传送到宝箱旁触发），也支持批量打开当前地图中可解析的静态宝箱。</p><div class="gallery"><figure><img src="images/v1.1/宝箱提示.png" alt="宝箱提示截图" loading="lazy"><figcaption>宝箱提示</figcaption></figure><figure><img src="images/v1.1/宝箱提示2.png" alt="宝箱提示截图 2" loading="lazy"><figcaption>提示图标</figcaption></figure><figure><img src="images/v1.1/宝箱提示3.png" alt="宝箱提示截图 3" loading="lazy"><figcaption>提示示例</figcaption></figure><figure><img src="images/v1.1/打开宝箱.png" alt="打开宝箱截图" loading="lazy"><figcaption>打开宝箱</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 5 · 消耗类技能无消耗</h3><p>料理、炼金、魔本、商技、EX 道具等不再消耗素材或金币；战斗外还可以无消耗制作料理。</p><div class="gallery"><figure><img src="images/v1.1/消耗类开关.png" alt="消耗类开关截图" loading="lazy"><figcaption>消耗类开关</figcaption></figure><figure><img src="images/v1.1/无消耗料理.png" alt="无消耗料理截图" loading="lazy"><figcaption>无消耗料理</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 6 · 月無の舞</h3><p>战斗内“战斗修改”新增 Buff 菜单，可直接赋予全体“月無の舞”效果。</p><div class="gallery"><figure><img src="images/v1.1/月无之舞.png" alt="月无之舞截图" loading="lazy"><figcaption>月無の舞</figcaption></figure></div></article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="v12">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.2</p><h2>版本更新说明</h2></div>
+        <div class="feature-grid compact-grid">
+          <article class="feature-card"><h3>更新 1 · 累计类增伤修改</h3><p>可修改“战斗数据累积、BF斗士的经验、失败的经验、羞耻的经验、胜利的经验、偷窃的经验、友情的力量”等累计次数类增伤能力。</p><div class="gallery"><figure><img src="images/v1.2/累计类增伤修改.png" alt="累计类增伤修改截图" loading="lazy"><figcaption>累计类增伤修改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 2 · 诱惑模拟（香水）</h3><p>“战斗对白模拟”新增诱惑模拟功能，可手动播放装备香水时触发的完整诱惑事件及分支对话。</p><div class="gallery"><figure><img src="images/v1.2/香水诱惑模拟.png" alt="香水诱惑模拟截图" loading="lazy"><figcaption>香水诱惑模拟</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 3 · 入队模拟</h3><p>自由查看角色“想加入 / 同意 / 拒绝”的完整入队对话。</p><div class="gallery"><figure><img src="images/v1.2/入队模拟.png" alt="入队模拟截图 1" loading="lazy"><figcaption>入队模拟</figcaption></figure><figure><img src="images/v1.2/入队模拟2.png" alt="入队模拟截图 2" loading="lazy"><figcaption>入队模拟</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 4 · 魔王城赠送礼物改</h3><p>列出所有礼物，查看好感度变化和对话，并支持无视持有数量与不消耗物品赠送。</p><div class="gallery"><figure><img src="images/v1.2/魔王城赠送礼物改.png" alt="魔王城赠送礼物改截图" loading="lazy"><figcaption>魔王城赠送礼物改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 5 · 魔王城移除候补</h3><p>可在魔王城对话、角色图鉴和战斗修改菜单中踢出候补角色，并播放拒绝入队台词。被移出的角色可在角色图鉴中重新加入，或批量加回。敌人和角色 ID 可通过附送数据目录中的 CSV 查询。</p><div class="gallery"><figure><img src="images/v1.2/移出候补1.png" alt="移出候补截图 1" loading="lazy"><figcaption>移出候补</figcaption></figure><figure><img src="images/v1.2/移出候补2.png" alt="移出候补截图 2" loading="lazy"><figcaption>重新加入</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 6 · 魔王城撒娇改</h3><p>查看拒绝对话，播放各种场景并无视好感度要求，且不会传送到冥府。</p><div class="gallery"><figure><img src="images/v1.2/魔王城撒娇改.png" alt="魔王城撒娇改截图" loading="lazy"><figcaption>魔王城撒娇改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 7.1 · 当前角色职业、种族</h3><p>切换当前角色职业或种族时显示升级可学习的技能/能力。</p><div class="gallery"><figure><img src="images/v1.2/切换当前角色种族.png" alt="切换当前角色种族截图" loading="lazy"><figcaption>切换当前角色种族</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 7.2 · 当前角色学习技能与能力</h3><p>反过来，通过“当前角色学习技能”和“当前角色学习能力”，可以自由学习任意技能或能力。可以让鲁卡学习“次元断”、“绿龙波”、“魅凪的弟子”。</p><div class="gallery"><figure><img src="images/v1.2/当前角色学习技能.png" alt="当前角色学习技能截图" loading="lazy"><figcaption>当前角色学习技能</figcaption></figure><figure><img src="images/v1.2/当前角色学习能力.png" alt="当前角色学习能力截图" loading="lazy"><figcaption>当前角色学习能力</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 8 · 强制胜利</h3><p>把当前敌人设为击败状态，再交给原版流程进行胜利结算；不同于 MTool 的直接胜利。职业、种族、技能和能力可通过附送 CSV 查询。</p><div class="gallery"><figure><img src="images/v1.2/强制胜利.png" alt="强制胜利截图" loading="lazy"><figcaption>强制胜利</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新 9 · 合成改</h3><p>在任意地点进行合成，并可选择无视条件直接合成。</p><div class="gallery"><figure><img src="images/v1.2/合成改.png" alt="合成改截图" loading="lazy"><figcaption>合成改</figcaption></figure></div></article>
+          <article class="feature-card"><h3>更新10</h3><p>添加“图片资源覆盖”开关，可以一键替换游戏中的资源。</p><p>开启后，在“游戏目录\GouqiGraphicsOverride”里面的图片会覆盖“游戏目录\Graphics”里面的同名图片；如果图片不存在，则会继续使用“游戏目录\Graphics”里面的图片。</p><p>例如：<br><code>GouqiGraphicsOverride\Faces\ruka_fc1.png</code><br>会覆盖<br><code>Graphics\Faces\ruka_fc1.png</code><br>（这张图片是鲁卡的正常形态的头像）</p><p>如果游戏目录下面没有 GouqiGraphicsOverride 文件夹，可以自己创建一个（与 Graphics 在同一层级）。</p><p>GouqiGraphicsOverride 下面的 Battlers\Faces\Pictures 等子文件夹可能需要自己创建，文件夹结构、文件名和扩展名与 Graphics 最好严格保持一致，区分大小写。</p><p>特别地：<br>如果要使用某些服装包（例如穿衣服服装包），可直接放到本 Mod 的 GouqiGraphicsOverride 目录下，开启开关即可生效，而不需要替换 Graphics 里面的原版文件。</p><div class="gallery"><figure><img src="images/v1.2/图片资源替换1.png" alt="图片资源替换截图 1" loading="lazy"><figcaption>图片资源替换1</figcaption></figure><figure><img src="images/v1.2/图片资源替换2.png" alt="图片资源替换截图 2" loading="lazy"><figcaption>图片资源替换2</figcaption></figure><figure><img src="images/v1.2/图片资源替换3.png" alt="图片资源替换截图 3" loading="lazy"><figcaption>图片资源替换3</figcaption></figure></div></article>
+        </div>
+      </section>
+
+      <section class="guide-section guide-notes" id="notes">
+        <div class="section-heading"><p class="eyebrow">NOTES</p><h2>数据与使用提示</h2></div>
+        <div class="notes-grid"><div><h3>数据目录</h3><p>附送的数据 CSV 可用于快速查找敌人、角色、职业、种族、技能、能力和物品 ID。线上版的“数据库名称表”提供搜索、分页和详情查看。</p></div><div><h3>适度使用</h3><p>这是研究和调试工具，不负责游戏平衡。建议保留原始存档，并在测试结束后关闭重复或影响流程的开关。</p></div><div><h3>图片说明</h3><p>本页截图仅用于说明菜单操作，不是游戏原始 Graphics 资源。点击任意截图可以放大查看。</p></div></div>
+      </section>
+
+    </main>
+
+    <div class="image-modal" id="image-modal" hidden><div class="image-backdrop" data-close-image></div><figure class="image-modal-panel"><button class="image-close" type="button" aria-label="关闭图片" data-close-image>×</button><img id="image-modal-target" alt=""><figcaption id="image-modal-caption"></figcaption></figure></div>
+    <footer class="guide-footer"><span>Gouqi Research Mod · 使用说明与更新日志</span><a href="#top">返回顶部 ↑</a></footer>
+    <script src="original-text.js"></script>
+    <script src="latest-text.js"></script>
+    <script src="content-flow.js"></script>
+    <script src="guide.js"></script>
+  </body>
+</html>

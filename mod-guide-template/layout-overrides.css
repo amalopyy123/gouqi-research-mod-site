@@ -1,0 +1,38 @@
+/* Keep the guide readable as a single top-to-bottom sequence. */
+.guide-hero {
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+.steps-grid,
+.feature-grid,
+.notes-grid {
+  grid-template-columns: 1fr;
+}
+
+.feature-card {
+  width: 100%;
+}
+
+.gallery {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.gallery img {
+  height: auto;
+  min-height: 180px;
+  max-height: 460px;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    min-height: 140px;
+    max-height: 420px;
+  }
+}
