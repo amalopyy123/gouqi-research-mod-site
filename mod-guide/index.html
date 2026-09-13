@@ -17,6 +17,7 @@
           <a href="#v10">基础功能</a>
           <a href="#v11">1.1 更新</a>
           <a href="#v12">1.2 更新</a>
+          <a href="#v13">1.3 更新</a>
         </nav>
       </div>
     </header>
@@ -27,7 +28,7 @@
           <p class="eyebrow">MONSTER GIRL QUEST PARADOX · 终章</p>
           <h1>研究、调试与数据查询工具</h1>
           <p class="lede">Gouqi Research Mod 是为方便研究游戏数据、测试事件和调试流程制作的多功能 Mod。请适度使用，过度修改可能会降低游戏乐趣。</p>
-          <div class="hero-badges"><span>当前文档版本 1.2</span><span>55 张功能截图</span><span>可离线阅读</span></div>
+          <div class="hero-badges"><span>当前文档版本 1.3</span><span>74 张功能截图</span><span>可离线阅读</span></div>
         </div>
         <aside class="hero-note"><strong>使用前请备份存档</strong><p>本文档只介绍 Mod 的用途和操作方式；实际功能以压缩包内脚本及游戏版本为准。</p></aside>
       </section>
@@ -86,6 +87,26 @@
           <article class="feature-card"><h3>更新 8 · 强制胜利</h3><p>把当前敌人设为击败状态，再交给原版流程进行胜利结算；不同于 MTool 的直接胜利。职业、种族、技能和能力可通过附送 CSV 查询。</p><div class="gallery"><figure><img src="images/v1.2/强制胜利.png" alt="强制胜利截图" loading="lazy"><figcaption>强制胜利</figcaption></figure></div></article>
           <article class="feature-card"><h3>更新 9 · 合成改</h3><p>在任意地点进行合成，并可选择无视条件直接合成。</p><div class="gallery"><figure><img src="images/v1.2/合成改.png" alt="合成改截图" loading="lazy"><figcaption>合成改</figcaption></figure></div></article>
           <article class="feature-card"><h3>更新10</h3><p>添加“图片资源覆盖”开关，可以一键替换游戏中的资源。</p><p>开启后，在“游戏目录\GouqiGraphicsOverride”里面的图片会覆盖“游戏目录\Graphics”里面的同名图片；如果图片不存在，则会继续使用“游戏目录\Graphics”里面的图片。</p><p>例如：<br><code>GouqiGraphicsOverride\Faces\ruka_fc1.png</code><br>会覆盖<br><code>Graphics\Faces\ruka_fc1.png</code><br>（这张图片是鲁卡的正常形态的头像）</p><p>如果游戏目录下面没有 GouqiGraphicsOverride 文件夹，可以自己创建一个（与 Graphics 在同一层级）。</p><p>GouqiGraphicsOverride 下面的 Battlers\Faces\Pictures 等子文件夹可能需要自己创建，文件夹结构、文件名和扩展名与 Graphics 最好严格保持一致，区分大小写。</p><p>特别地：<br>如果要使用某些服装包（例如穿衣服服装包），可直接放到本 Mod 的 GouqiGraphicsOverride 目录下，开启开关即可生效，而不需要替换 Graphics 里面的原版文件。</p><div class="gallery"><figure><img src="images/v1.2/图片资源替换1.png" alt="图片资源替换截图 1" loading="lazy"><figcaption>图片资源替换1</figcaption></figure><figure><img src="images/v1.2/图片资源替换2.png" alt="图片资源替换截图 2" loading="lazy"><figcaption>图片资源替换2</figcaption></figure><figure><img src="images/v1.2/图片资源替换3.png" alt="图片资源替换截图 3" loading="lazy"><figcaption>图片资源替换3</figcaption></figure></div></article>
+        </div>
+      </section>
+
+      <section class="guide-section" id="v13">
+        <div class="section-heading"><p class="eyebrow">VERSION 1.3</p><h2>1.3版本的更新说明</h2></div>
+        <div class="feature-grid compact-grid">
+          <article class="feature-card"><h3>1.3 版本的更新1</h3><p>允许修改角色名字，将GouqiConfig.json放到游戏根目录（跟 Game.exe 在同一目录），编辑 preset_names 即可输入预置的角色名字；</p><p>配合之前的“图片资源覆盖”，可以实现修改角色头像和名字。</p><div class="gallery"><figure><img src="images/v1.3/修改角色名字1.png" alt="修改角色名字1" loading="lazy"><figcaption>修改角色名字1</figcaption></figure><figure><img src="images/v1.3/修改角色名字2.png" alt="修改角色名字2" loading="lazy"><figcaption>修改角色名字2</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新2</h3><p>添加“移除伤害浮动的开关”，方便测试伤害。</p><div class="gallery"><figure><img src="images/v1.3/移除伤害浮动.png" alt="移除伤害浮动" loading="lazy"><figcaption>移除伤害浮动</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新3.1</h3><p>添加“女仆对话菜单”，可以随时编辑队伍。</p><div class="gallery"><figure><img src="images/v1.3/女仆对话1.png" alt="女仆对话1" loading="lazy"><figcaption>女仆对话1</figcaption></figure><figure><img src="images/v1.3/女仆对话2.png" alt="女仆对话2" loading="lazy"><figcaption>女仆对话2</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新3.2</h3><p>添加“大神官对话菜单”，可以随时转职。</p><div class="gallery"><figure><img src="images/v1.3/大神官对话.png" alt="大神官对话" loading="lazy"><figcaption>大神官对话</figcaption></figure></div><p>【注】其实已有功能“当前角色学习技能”可以让角色学习技能 ID 为 10101 的特技“转职之书”，也能随时转职。</p></article>
+          <article class="feature-card"><h3>1.3 版本的更新4</h3><p>“敌人资料与战斗”菜单中，“敌人信息”新增敌人的“属性抗性”和“状态抗性”显示。</p><div class="gallery"><figure><img src="images/v1.3/敌人信息.png" alt="敌人信息" loading="lazy"><figcaption>敌人信息</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新5</h3><p>添加“成就数据”菜单，现在可以修改各项游戏成就。</p><div class="gallery"><figure><img src="images/v1.3/修改成就.png" alt="修改成就" loading="lazy"><figcaption>修改成就</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新6</h3><p>添加“原版禁止队伍排序”的菜单，若游戏原版锁定了队伍排序功能，可在此处解除限制。</p><div class="gallery"><figure><img src="images/v1.3/原版禁止排序.png" alt="原版禁止排序" loading="lazy"><figcaption>原版禁止排序</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新7</h3><p>添加“调用事件”菜单，暂时只有“野营”的事件，后续将扩展手动调用事件的功能。</p><div class="gallery"><figure><img src="images/v1.3/调用事件.png" alt="调用事件" loading="lazy"><figcaption>调用事件</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新8</h3><p>添加“允许装备同颜色秘石”菜单，开启后，同一件装备可以镶嵌相同颜色的秘石。</p><div class="gallery"><figure><img src="images/v1.3/同颜色秘石.png" alt="同颜色秘石" loading="lazy"><figcaption>同颜色秘石</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新9</h3><p>添加“区域优先遇敌”功能，可自定义当前区域的遇敌规则，包含两种模式：</p><p>手动目标：指定在当前区域必定遭遇特定怪物。</p><p>自动规则：未指定手动目标或目标失效时生效。可选规则包括“未遭遇”、“未入队”、“Boss”及“原版随机”。针对存在多只 Boss 的区域，可开启“Boss仅未遭遇”以提升未遭遇 Boss 的优先级。</p><div class="gallery"><figure><img src="images/v1.3/区域优先遇敌1.png" alt="区域优先遇敌1" loading="lazy"><figcaption>区域优先遇敌1</figcaption></figure><figure><img src="images/v1.3/区域优先遇敌2.png" alt="区域优先遇敌2" loading="lazy"><figcaption>区域优先遇敌2</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新10</h3><p>添加“战斗自动胜利”菜单，可以让野外遭遇直接胜利，不同于 Mtool，这里的胜利走结算流程。另外可以设置“跳过Boss”、“跳过未入队”、“经验倍率”和“职业经验倍率”。</p><div class="gallery"><figure><img src="images/v1.3/战斗自动胜利.png" alt="战斗自动胜利" loading="lazy"><figcaption>战斗自动胜利</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新11</h3><p>“战斗修改”的“异常状态”中添加各种异常状态，包括圣痕和暗秽；“战斗修改”的“Buff”中添加“武技扩散”的Buff。</p><div class="gallery"><figure><img src="images/v1.3/战斗修改1.png" alt="战斗修改1" loading="lazy"><figcaption>战斗修改1</figcaption></figure><figure><img src="images/v1.3/战斗修改2.png" alt="战斗修改2" loading="lazy"><figcaption>战斗修改2</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新12</h3><p>“研究修改器”下面添加“战斗前修改”的菜单，可以添加各种异常状态和Buff（现在只有“月无之舞”和“武技扩散”），可以指定敌我，开战后自动添加，不需要再用“战斗修改”来手动添加。（注意这里直接赋予升天等类似状态可能会出问题）</p><div class="gallery"><figure><img src="images/v1.3/战斗前修改1.png" alt="战斗前修改1" loading="lazy"><figcaption>战斗前修改1</figcaption></figure><figure><img src="images/v1.3/战斗前修改2.png" alt="战斗前修改2" loading="lazy"><figcaption>战斗前修改2</figcaption></figure></div></article>
+          <article class="feature-card"><h3>1.3 版本的更新13</h3><p>添加“常见任务”的菜单，现在有“升级瓦尼拉的小店”的功能，允许一键升级“瓦尼拉的小店”和完成相关事件。</p><div class="gallery"><figure><img src="images/v1.3/升级瓦尼拉的小店.png" alt="升级瓦尼拉的小店" loading="lazy"><figcaption>升级瓦尼拉的小店</figcaption></figure></div></article>
         </div>
       </section>
 

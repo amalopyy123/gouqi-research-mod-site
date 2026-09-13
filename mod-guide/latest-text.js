@@ -29,12 +29,17 @@
       ["1.1 版本的更新6", ["在战斗内的“战斗修改”中添加了 Buff 菜单，支持直接赋予全体“月無の舞”效果。"]]
     ],
     v12: {
-      0: ["更新1", ["游戏中存在几个累计次数类增伤的能力，分别为：战斗数据累积（戦闘データ累積）、BF斗士的经验（バトルファッカーの経験）、失败的经验（敗北の経験）、羞耻的经验（羞恥の経験）、胜利的经验（勝利の経験）、偷窃的经验（盗みの経験）、友情的力量（友情の力）。", "现在可以通过“累计类增伤修改”菜单来进行修改。", "（有兴趣的话可以去看看我写的《【解包】偷窃的经验伤害机制公开；累计次数类增伤被动分析》）"]],
-      3: ["更新4", ["“魔王城赠送礼物改”支持列出所有礼物，查看好感度变化，查看对话，并允许在无视持有数量、不消耗物品的情况下进行赠送。"]],
-      4: ["更新5", ["新增“魔王城移除候补”（踢人）功能（可在魔王城对话、角色图鉴及战斗修改菜单中使用），踢人时会播放拒绝入队的台词。被移出候补的角色可在“角色图鉴”中重新加入，或通过“全可入队角色加入候补”批量加回。（注：随附数据文件夹中附带 CSV 文件，可按名称快速查询敌人或角色的 ID。）"]],
-      6: ["更新7.1", ["“切换当前角色职业”与“切换当前角色种族”界面中，会显示角色升级后可学习的技能或能力。"]],
-      7: ["更新7.2", ["反过来，通过“当前角色学习技能”和“当前角色学习能力”，可以自由学习任意技能或能力。", "可以让鲁卡学习“次元断”、“绿龙波”、“魅凪的弟子”。", "（职业、种族、技能和能力的相关 ID 与信息，可在随附数据文件夹中的 CSV 文件中快速查询）"]],
-      10: ["更新10", ["添加“图片资源覆盖”开关，可以一键替换游戏中的资源。", "开启后，在“游戏目录\\GouqiGraphicsOverride”里面的图片会覆盖“游戏目录\\Graphics”里面的同名图片；如果图片不存在，则会继续使用“游戏目录\\Graphics”里面的图片。", "例如：", "GouqiGraphicsOverride\\Faces\\ruka_fc1.png", "会覆盖", "Graphics\\Faces\\ruka_fc1.png", "（这张图片是鲁卡的正常形态的头像）", "如果游戏目录下面没有 GouqiGraphicsOverride 文件夹，可以自己创建一个（与 Graphics 在同一层级）。", "GouqiGraphicsOverride 下面的 Battlers\\Faces\\Pictures 等子文件夹可能需要自己创建，文件夹结构、文件名和扩展名与 Graphics 最好严格保持一致，区分大小写。", "补充用法：", "如果要使用某些服装包（例如“穿衣服服装包”），可放到本 Mod 的 GouqiGraphicsOverride 目录下，开启“图片资源覆盖”开关即可生效，而不需要替换 Graphics 里面的原版文件。"]]
+      0: ["1.2 版本的更新1", ["游戏中存在几个累计次数类增伤的能力，分别为：战斗数据累积（戦闘データ累積）、BF斗士的经验（バトルファッカーの経験）、失败的经验（敗北の経験）、羞耻的经验（羞恥の経験）、胜利的经验（勝利の経験）、偷窃的经验（盗みの経験）、友情的力量（友情の力）。", "现在可以通过“累计类增伤修改”菜单来进行修改。", "（有兴趣的话可以去看看我写的《【解包】偷窃的经验伤害机制公开；累计次数类增伤被动分析》）"]],
+      1: ["1.2 版本的更新2", ["“战斗对白模拟”新增“诱惑模拟（香水）”功能，可以手动播放装备香水时触发的完整诱惑事件及分支对话。"]],
+      2: ["1.2 版本的更新3", ["鉴于入队的对话通常只能听到一次，而拒绝入队的对话几乎没有机会播放，现在“战斗对白模拟”新增了“入队模拟”功能，可以自由查看“想加入/同意/拒绝”的完整对话。"]],
+      3: ["1.2 版本的更新4", ["“魔王城赠送礼物改”支持列出所有礼物，查看好感度变化，查看对话，并允许在无视持有数量、不消耗物品的情况下进行赠送。"]],
+      4: ["1.2 版本的更新5", ["新增“魔王城移除候补”（踢人）功能（可在魔王城对话、角色图鉴及战斗修改菜单中使用），踢人时会播放拒绝入队的台词。被移出候补的角色可在“角色图鉴”中重新加入，或通过“全可入队角色加入候补”批量加回。（注：随附数据文件夹中附带 CSV 文件，可按名称快速查询敌人或角色的 ID。）"]],
+      5: ["1.2 版本的更新6", ["“魔王城撒娇改”可以查看拒绝对话，播放各种场景并无视好感度要求，更重要的是，不会传送到冥府。"]],
+      6: ["1.2 版本的更新7.1", ["“切换当前角色职业”与“切换当前角色种族”界面中，会显示角色升级后可学习的技能或能力。"]],
+      7: ["1.2 版本的更新7.2", ["反过来，通过“当前角色学习技能”和“当前角色学习能力”，可以自由学习任意技能或能力。", "可以让鲁卡学习“次元断”、“绿龙波”、“魅凪的弟子”。", "（职业、种族、技能和能力的相关 ID 与信息，可在随附数据文件夹中的 CSV 文件中快速查询）"]],
+      8: ["1.2 版本的更新8", ["战斗中添加“强制胜利”选项，不同于 MTool 的胜利，这里的强制胜利是将当前敌人设为击败状态，并交给原版流程进行胜利结算。"]],
+      9: ["1.2 版本的更新9", ["添加“合成改”菜单，可以在任意地方进行合成，并可以选择无视条件直接合成。"]],
+      10: ["1.2 版本的更新10", ["添加“图片资源覆盖”开关，可以一键替换游戏中的资源。", "开启后，在“游戏目录\\GouqiGraphicsOverride”里面的图片会覆盖“游戏目录\\Graphics”里面的同名图片；如果图片不存在，则会继续使用“游戏目录\\Graphics”里面的图片。", "例如：", "GouqiGraphicsOverride\\Faces\\ruka_fc1.png", "会覆盖", "Graphics\\Faces\\ruka_fc1.png", "（这张图片是鲁卡的正常形态的头像）", "如果游戏目录下面没有 GouqiGraphicsOverride 文件夹，可以自己创建一个（与 Graphics 在同一层级）。", "GouqiGraphicsOverride 下面的 Battlers\\Faces\\Pictures 等子文件夹可能需要自己创建，文件夹结构、文件名和扩展名与 Graphics 最好严格保持一致，区分大小写。", "补充用法：", "如果要使用某些服装包（例如“穿衣服服装包”），可放到本 Mod 的 GouqiGraphicsOverride 目录下，开启“图片资源覆盖”开关即可生效，而不需要替换 Graphics 里面的原版文件。"]]
     }
   };
 
@@ -42,10 +47,18 @@
     if (!card || !entry) return;
     const title = card.querySelector(":scope > h3");
     if (title) title.textContent = entry[0];
-    const paragraphs = Array.from(card.querySelectorAll(":scope > p"));
+    let paragraphs = Array.from(card.querySelectorAll(":scope > p"));
+    const firstGallery = card.querySelector(":scope > .gallery");
+    while (paragraphs.length < entry[1].length) {
+      const paragraph = document.createElement("p");
+      if (firstGallery) card.insertBefore(paragraph, firstGallery);
+      else card.append(paragraph);
+      paragraphs.push(paragraph);
+    }
     entry[1].forEach((text, index) => {
       if (paragraphs[index]) paragraphs[index].textContent = text;
     });
+    paragraphs.slice(entry[1].length).forEach((paragraph) => paragraph.remove());
   }
 
   Object.entries(latest.v10).forEach(([index, entry]) => setCard(document.querySelectorAll("#v10 .feature-card")[Number(index)], entry));
@@ -55,12 +68,35 @@
   const lede = document.querySelector(".guide-hero .lede");
   if (lede) lede.textContent = "分享下自己做的 Mod，花了几周燃烧无数 token（都够我去买个游戏了）。。本来只是为了方便自己看数据，后来为了满足群友们的需求，把想到的功能都放进去了，变得有点像大杂烩。请适度使用，或者调试的时候用，改太多游戏会变得不好玩。";
   const installText = [
-    "确认游戏目录内已有 Patch 文件夹，并且其中包含游戏原本的 Patch.rb 等基础补丁文件。将 zzzz_gouqi_Research_Mod.rb 放入游戏内的 Patch 目录。",
-    "如果 Mod 不生效，可以试试如下方法：先备份游戏 Patch 目录下的 Patch.rb。然后把包内附加的 Patch\\Patch.rb 复制并放到游戏的 Patch 目录下。",
-    "从游戏内的 Patch 目录中移除 zzzz_gouqi_Research_Mod.rb 文件。再次提醒，使用前记得先备份存档，过度修改会失去游戏乐趣。"
+    [
+      "确认游戏目录内已有 Patch 文件夹，并且其中包含游戏原本的 Patch.rb 等基础补丁文件。",
+      "将 zzzz_gouqi_Research_Mod.rb 放入游戏内的 Patch 目录。",
+      "（可选配置） 将 GouqiConfig.json 放入游戏根目录（跟 Game.exe 在同一目录）。",
+      "注：如果不放此文件，Mod 将直接以默认设置运行。",
+      "如果需要自定义配置，可使用文本编辑器打开修改（推荐使用 Sublime Text 等软件，若用系统记事本请注意不要改错 JSON 的英文双引号和逗号，并确保保存为 UTF-8 编码）。",
+      "包内的 GouqiConfig.sample.json 为默认格式参考。如果自己修改后导致游戏报错进不去，可参考该文件排查，或直接将其改名为 GouqiConfig.json 覆盖还原。"
+    ],
+    [
+      "如果 Mod 不生效，可以试试如下方法：",
+      "先备份游戏 Patch 目录下的 Patch.rb。然后把包内附加的 Patch\\Patch.rb 复制并放到游戏的 Patch 目录下。"
+    ],
+    [
+      "从游戏内的 Patch 目录中移除 zzzz_gouqi_Research_Mod.rb 文件。",
+      "再次提醒，使用前记得先备份存档，过度修改会失去游戏乐趣。"
+    ]
   ];
-  document.querySelectorAll("#install .step-card p").forEach((paragraph, index) => {
-    if (installText[index]) paragraph.textContent = installText[index];
+  document.querySelectorAll("#install .step-card").forEach((card, cardIndex) => {
+    const texts = installText[cardIndex] || [];
+    let paragraphs = Array.from(card.querySelectorAll(":scope > p"));
+    while (paragraphs.length < texts.length) {
+      const paragraph = document.createElement("p");
+      card.append(paragraph);
+      paragraphs.push(paragraph);
+    }
+    texts.forEach((text, index) => {
+      paragraphs[index].textContent = text;
+    });
+    paragraphs.slice(texts.length).forEach((paragraph) => paragraph.remove());
   });
   const v10Note = document.querySelector("#v10 .section-heading > p:last-child");
   if (v10Note) v10Note.textContent = "下面功能中，如果部分与其它 Mod 重复了，可以到菜单栏关闭。";
