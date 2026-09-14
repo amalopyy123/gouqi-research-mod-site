@@ -52,7 +52,10 @@
     const image = document.createElement("img");
     const caption = document.createElement("figcaption");
     const label = fileName.replace(/\.[^.]+$/, "");
-    image.src = `images/${version}/${fileName}`;
+    const localPath = `images/${version}/${fileName}`;
+    image.dataset.localImage = localPath;
+    if (window.applyModGuideImageSource) window.applyModGuideImageSource(image, localPath);
+    else image.src = localPath;
     image.alt = `${label}截图`;
     image.loading = "lazy";
     caption.textContent = label;

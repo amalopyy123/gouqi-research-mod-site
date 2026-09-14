@@ -62,6 +62,19 @@ window.SITE_CONFIG = {
 2. 若使用直接上传，上传整个 `cloudflare` 文件夹。
 3. 若连接 GitHub，将此文件夹设为项目根目录；构建命令留空，输出目录填 `.`（或留空，按 Cloudflare 页面提示选择）。
 
+本项目的根目录 `index.html` 是数据库首页，并链接到 `mod-guide/` 说明页，因此不能把输出目录改成 `mod-guide`，否则数据库首页和 CSV 文件不会发布。
+
+说明页截图存放在 Cloudflare R2，不再放入 Pages 部署包。线上资源地址在 `mod-guide/asset-config.js` 中配置为 `https://mgqp-images.21001231.xyz`。Mod 文件夹内的离线版使用同名的 `asset-config.js`，配置为空字符串，因此继续读取本地 `images/` 目录。
+
+R2 中请保持以下对象路径结构：
+
+```text
+images/v1.0/文件名.png
+images/v1.1/文件名.png
+images/v1.2/文件名.png
+images/v1.3/文件名.png
+```
+
 首页入口和资料表都在 `index.html`，样式与交互分别在 `styles.css`、`app.js`。
 
 

@@ -7,6 +7,7 @@
   const databaseLink = document.querySelector(".online-database-link");
 
   document.querySelectorAll(".gallery img").forEach((image) => {
+    if (window.applyModGuideImageSource) window.applyModGuideImageSource(image);
     image.addEventListener("click", () => {
       modalImage.src = image.currentSrc || image.src;
       modalImage.alt = image.alt;

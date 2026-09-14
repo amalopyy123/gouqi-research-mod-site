@@ -21,3 +21,6 @@ MTool_MapDataCache/
 *.rar
 *.7z
 *.exe
+
+# Mod guide screenshots are hosted in Cloudflare R2
+mod-guide/images/
