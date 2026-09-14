@@ -1,0 +1,54 @@
+sections:
+  - id: install
+    eyebrow: GETTING STARTED
+    title: 安装、更新与卸载
+    kind: steps
+    cards:
+      - number: 01
+        title: 安装 / 更新
+        blocks:
+          - text: 确认游戏目录内已有 Patch 文件夹，并且其中包含游戏原本的 Patch.rb 等基础补丁文件。
+          - text: 将 zzzz_gouqi_Research_Mod.rb 放入游戏内的 Patch 目录。
+          - text: （可选配置） 将 GouqiConfig.json 放入游戏根目录（跟 Game.exe 在同一目录）。
+      - number: 02
+        title: Mod 不生效时
+        blocks:
+          - text: 如果 Mod 不生效，可以试试如下方法：先备份游戏 Patch 目录下的 Patch.rb。
+          - text: 然后把包内附加的 Patch\Patch.rb 复制并放到游戏的 Patch 目录下。
+      - number: 03
+        title: 卸载
+        blocks:
+          - text: 从游戏内的 Patch 目录中移除 zzzz_gouqi_Research_Mod.rb 文件。
+
+  - id: v13
+    eyebrow: VERSION 1.3
+    title: 1.3版本的更新说明
+    cards:
+      - title: 1.3 版本的更新1
+        blocks:
+          - text: 允许修改角色名字，将GouqiConfig.json放到游戏根目录（跟 Game.exe 在同一目录），编辑 preset_names 即可输入预置的角色名字；
+          - image: images/v1.3/修改角色名字1.png
+            alt: 修改角色名字1
+            caption: 修改角色名字1
+          - text: 配合之前的“图片资源覆盖”，可以实现修改角色头像和名字。
+          - image: images/v1.3/修改角色名字2.png
+            alt: 修改角色名字2
+            caption: 修改角色名字2
+
+      - title: 1.3 版本的更新2
+        blocks:
+          - text: 添加“移除伤害浮动的开关”，方便测试伤害。
+          - image: images/v1.3/移除伤害浮动.png
+            alt: 移除伤害浮动
+
+      - title: 1.3 版本的更新3.1
+        blocks:
+          - text: 添加“女仆对话菜单”，可以随时编辑队伍。
+          - image: images/v1.3/女仆对话1.png
+          - image: images/v1.3/女仆对话2.png
+
+      - title: 1.3 版本的更新3.2
+        blocks:
+          - text: 添加“大神官对话菜单”，可以随时转职。
+          - image: images/v1.3/大神官对话.png
+          - text: 【注】其实已有功能“当前角色学习技能”可以让角色学习技能 ID 为 10101 的特技“转职之书”，也能随时转职。

@@ -83,3 +83,5 @@ images/v1.3/文件名.png
 `mod-guide-template/` 保存了当前说明页的模板和生成说明。它包含单列大图样式、图片点击放大、按原文顺序穿插文字与图片的内容结构，以及可直接复制到新对话中的操作提示。后续生成新的 Mod 介绍页时，优先阅读其中的 `README.md`。
 
 固定生成规则单独记录在 [`mod-guide-template/网页生成规则.md`](mod-guide-template/网页生成规则.md)。
+
+说明页内容也可以使用 `tools/generate_mod_guide.py` 从 YAML 生成。YAML 示例在 `mod-guide-template/mod-guide.sample.yml`，使用方法和字段说明见 `mod-guide-template/README.md`。

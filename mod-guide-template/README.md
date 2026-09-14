@@ -14,6 +14,30 @@
 - `guide.js`：图片点击放大功能。一般不需要修改。
 - `images/v1.0/`、`images/v1.1/`、`images/v1.2/`：按版本保存截图。可以增加新的版本目录。
 
+## YAML 内容生成器
+
+`../tools/generate_mod_guide.py` 可以读取 YAML 内容源，生成说明页中间的 sections。示例文件为 `mod-guide.sample.yml`。YAML 使用 `blocks` 按顺序保存文字和图片，因此可以保留“文字 → 图片 → 文字”的原文顺序。
+
+首次使用前安装 PyYAML：
+
+```text
+python -m pip install pyyaml
+```
+
+只生成 HTML 片段：
+
+```text
+python tools/generate_mod_guide.py mod-guide-template/mod-guide.sample.yml --assets-root "修改器发帖/mod/mod功能介绍（请提前看）" --output-fragment generated/mod-guide-content.html
+```
+
+同时替换线上版和离线版中 `MOD_GUIDE_GENERATED_START` 与 `MOD_GUIDE_GENERATED_END` 标记之间的内容：
+
+```text
+python tools/generate_mod_guide.py mod-guide-template/mod-guide.yml --assets-root "修改器发帖/mod/mod功能介绍（请提前看）" --replace mod-guide/index.html --replace "修改器发帖/mod/mod功能介绍（请提前看）/mod介绍.html"
+```
+
+生成前会检查 section ID、图片相对路径、缺失图片和路径越界。线上版图片地址仍由 `mod-guide/asset-config.js` 指向 R2，离线版配置为空字符串。
+
 ## 新内容的标准写法
 
 在 `template-data.js` 中，每个功能写成：
