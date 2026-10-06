@@ -1,0 +1,25 @@
+# Generation notes
+
+- The guide is generated only from `修改器发帖/生成网页.txt` and `修改器发帖/发帖1.2/发帖1.2.txt`.
+- The older `发帖1.0/发帖v1.0.txt` and `发帖1.1/发帖1.1.txt` files were intentionally ignored.
+- The source text files use the legacy/default Chinese encoding; the generated HTML is UTF-8.
+- All 55 image references in the selected documents were verified successfully and copied into versioned `images/` folders.
+- The screenshots are documentation assets, not the game's original `Graphics` resources.
+- The offline guide works when opening `index.html` directly. Download and GitHub buttons still require network access.
+- During generation, the first asset-copy attempt omitted the online versioned image directories. The directories were created and the copy was rerun successfully; both online and offline guides now contain 55 images.
+- The source documents were updated after the previous guide build. The original-text and content-flow scripts were regenerated so changed wording, split 1.1 update entries, and image ordering are applied on page load.
+- The latest regeneration also applies the newest wording from both source documents through `latest-text.js`; all 55 referenced images remain present.
+- The version 1.3 section was generated only from `修改器发帖/发帖1.3/发帖1.3.txt`; older post drafts were not used as version 1.3 sources.
+- Version 1.3 adds 13 numbered updates (14 cards because update 3 is split into 3.1 and 3.2) and 19 screenshots under `images/v1.3`.
+- The complete online guide now contains 74 versioned screenshots. Every version 1.3 image reference was checked against an existing file.
+- The online and offline version 1.3 sections were kept in sync, with the original numbering, wording, paragraph order, and image placement preserved as closely as possible.
+- No download link, cloud-drive link, extraction code, or archive password was added to the guide page.
+- The raw HTML contains 71 static image references; the remaining 3 screenshots (v1.2 database lookup images) are inserted by `content-flow.js` at runtime. This is expected, and all 74 image files were verified.
+- No new blocking issue was encountered while generating version 1.3.
+- The source files `修改器发帖/生成网页.txt` and `修改器发帖/发帖1.2/发帖1.2.txt` were revised after the previous build. The content script was regenerated to apply the newer wording while keeping the existing screenshots.
+- Some updated entries contain more paragraphs than the old HTML placeholders. The script now creates the required paragraphs before applying the content, preventing text from being silently truncated.
+- The 74 screenshot files (about 42.8 MB) were moved out of the Cloudflare Pages project and are now served from the R2 custom domain `https://mgqp-images.21001231.xyz`. All 74 R2 URLs returned HTTP 200 during migration verification.
+- The local/offline guide retains its complete 74-file `images/` directory, and the shared image loader falls back to relative local paths when no R2 base URL is configured.
+- `mod-guide/images/` is ignored in the Pages repository so future local regenerations do not accidentally reintroduce the large screenshots into a deployment.
+- Because the repository root `index.html` links to this guide and serves the CSV database, Cloudflare Pages must publish the repository root (`.`), not only `mod-guide/`.
+- A reusable YAML generator was added at `tools/generate_mod_guide.py`; it requires PyYAML (`python -m pip install -r tools/requirements.txt`). PyYAML is not installed in the current environment, so the sample generation command was not executed here.
